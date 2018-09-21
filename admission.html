@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  <body class="flex p-6">
+    <div class="flex justify-center w-screen">
+      <div style="margin-top: 3rem;" class="md:w-4/5 lg:w-1/2">
+        <h1>Formulaire d'inscription</h1>
+        <form action="/admission" method="post" class="flex flex-col mt-6">
+          <label for="" class="font-bold text-xl py-2">Nom et prénoms</label>
+          <input type="text" placeholder="Bruce Wayne" name="username" class="appearance-none border-2 border-grey-dark rounded p-2 mb-3">
+          <label for="" class="font-bold text-xl py-2">Addresse mail</label>
+          <input type="email" placeholder="bruce@wayne.co" name="useremail" class="appearance-none border-2 border-grey-dark rounded p-2 mb-3">
+          <label for="" class="font-bold text-xl py-2">Niveau de connaissance</label>
+          <select name="levelpicker" class="appearance-none border-2 border-grey-dark rounded p-2 mb-3 w-full">
+            <option value="">Clique pour choisir une option</option>
+            <option value="niv4">J'ai des connaissances de base en programmation dans un langage</option>
+            <option value="niv3">J'ai déjà fait un peu de HTML/CSS ou Javascript</option>
+            <option value="niv2">Je programme dans un ou plusieurs langages avec aisance</option>
+            <option value="niv1">Je bleu, c'est quoi tout ça?</option>
+          </select>
+          <label class="font-bold text-xl py-2">Provenance</label>
+          <div class="flex items-center mb-3 mt-1">
+            <input type="checkbox" name="facebook" id="facebook" class="mr-3">
+            <label for="facebook" class="text-lg">Facebook</label>
+          </div>
+          <div class="flex items-center mb-3 mt-1">
+            <input type="checkbox" name="whatsapp" id="whatsapp" class="mr-3">
+            <label for="whatsapp" class="text-lg">WhatsApp</label>
+          </div>
+          <div class="flex items-center mb-3 mt-1">
+            <input type="checkbox" name="bao" id="bao" class="mr-3">
+            <label for="bao" class="text-lg">Bouche à Oreille</label>
+          </div>
+          <label for="motivation" class="font-bold text-xl py-2">Motivations</label>
+          <textarea id="motivation" name="motivation" type="text" placeholder="Je veux sauver Gotham du crime avec le code." rows="4" class="appearance-none border-2 border-grey-dark rounded p-2 mb-3"></textarea>
+          <div class="flex w-100">
+            <input type="submit" value="Envoyer" class="shadow-md block mt-3 bg-black text-white rounded py-3 px-6 text-lg">
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

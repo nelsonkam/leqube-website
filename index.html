@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>LeQube</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/public/stylesheets/style.css">
+  <script src="/public/zepto.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Lora:400i" rel="stylesheet">
+  <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+</head>
+
+<body>
+  <div class="flex flex-col justify-between pt-4 md:py-6">
+    <div class="pb-4" style="padding-left: 5%; padding-right: 5%;">
+      <div class="flex justify-between items-center">
+        <div class="flex items-center">
+          <img class="h-6 md:h-8 w-auto mr-2" src="/public/qube_cube.png" alt="Logo Cube">
+          <p class="text-2xl md:text-3xl font-bold">LeQube</p>
+        </div>
+        <div id="menu">
+          <div class="md:hidden border border-grey rounded flex items-center justify-center" style="height: 28px; width: 36px; padding-bottom: 2px;">
+            <p class="text-2xl">···</p>
+          </div>
+          <div id="dropdown" class="absolute bg-white pin-r z-50 hidden" style="max-width: 160px; top:48px; right: 5%;">
+            <div class="shadow p-4 flex flex-col">
+              <a class="text-black text-lg font-bold py-2" href="/event.html">Nos Évènements</a>
+              <a class="text-black text-lg font-bold py-2" href="/challenge.html">Web Challenge</a>
+              <a class="text-black text-lg font-bold py-2" href="/programme.html">Le Programme</a>
+            </div>
+          </div>
+        </div>
+        <div class="hidden md:flex">
+          <a class="text-black text-lg font-bold mr-4" href="/event.html">Nos Évènements</a>
+          <a class="text-black text-lg font-bold mr-4" href="/challenge.html">Web Challenge</a>
+          <a class="text-black text-lg font-bold" href="/programme.html">Le Programme</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="flex flex-wrap md:flex-no-wrap items-center overflow-hidden pt-6 md:pt-4 lg:pt-3 z-10">
+      <div style="padding-left: 5%;">
+        <div class="max-w-xs md:max-w-md">
+          <h1>Apprends à coder des applis Web</h1>
+          <p class="text-xl md:text-2xl pt-3">Deviens en 3 mois, un as du dévéloppement web à travers une série de cours vidéos et de mini-projets.</p>
+          <div class="mt-6 flex items-center">
+            <a class="shadow-md p-3 bg-black text-white no-underline font-bold rounded text-xl" href="/admission-closed.html">Essaie LeQube gratuitement</a>
+          </div>
+          <p class="text-grey-darker mt-2 italic">Le première semaine est offerte !</p>
+        </div>
+
+      </div>
+      <div class="pl-8 lg:ml-8 mt-6 lg:mt-2">
+        <img class="rounded-l-full lg:ml-8 max-w-full" src="https://assets.materialup.com/uploads/450481e0-28fd-4ec0-8630-7babc182151b/preview.png"
+          alt="">
+      </div>
+    </div>
+    <div class="p-6 md:p-8 mt-8">
+      <h2 class="text-center text-3xl">Comment ça marche ?</h2>
+    </div>
+    <div class="container mx-auto mb-8">
+      <div class="flex flex-col items-center">
+        <div class="flex flex-wrap justify-center md:justify-start px-6 items-center my-6">
+          <img class="h-32 shadow-md rounded-lg mr-4" src="/public/video.png" alt="">
+          <div class="max-w-xs md:max-w-sm pt-4 md:pt-0">
+            <h2>Adieu les tutos longs comme le bras </h2>
+            <p class="text-xl md:mt-3 mt-1">Découvres de nouvelles notions à travers une série de vidéos courtes (~15 mins) et précises.</p>
+          </div>
+        </div>
+        <div class="flex flex-wrap px-6 justify-center items-center my-6">
+          <img class="h-32 shadow-md rounded-lg mr-4" src="/public/github.png" alt="">
+          <div class="max-w-xs md:max-w-sm pt-4 md:pt-0">
+            <h2>100% Pratique. 0 blah blah.</h2>
+            <p class="text-xl md:mt-3 mt-1">Maitrises les différents concepts du dévéloppement Web à travers des exercices et projets pratiques qui mettront
+              tes acquis à l'épreuve. </p>
+          </div>
+        </div>
+        <div class="flex flex-wrap px-6 justify-center items-center my-6">
+          <img class="h-32 shadow-md rounded-lg mr-4" src="/public/convo.png" alt="">
+          <div class="max-w-xs md:max-w-sm pt-4 md:pt-0">
+            <h2>Constamment à l'écoute de tes préoccupations</h2>
+            <p class="text-xl md:mt-3 mt-1">Poses des questions et obtient un soutien personel quelque soit ta précoccupation.</p>
+          </div>
+        </div>
+      </div>
+      <div class="p-8 mt-8">
+        <h2 class="text-center text-3xl">Ne nous prends pas au mot...</h2>
+      </div>
+      <div class="flex justify-center flex-wrap max-w-lg mx-auto">
+
+        <div class="p-6 max-w-xs mx-3 mb-3">
+          <p class="text-center text-5xl text-teal">❝</p>
+          <p class="text-lg mb-2 lora">"Le Web n'est pas très compliqué et vous avez réussi à faire en sorte de le mettre à la portée de tout le monde"</p>
+          <h3>Arlette H.</h3>
+        </div>
+        <div class="p-6 max-w-xs mx-3 mb-3">
+          <p class="text-center text-5xl text-orange">❝</p>
+          <p class="text-lg mb-2 lora">"Je suis super heureux qu'une telle plateforme ait été mise sur pied, c'est un truc du genre je cherchais"</p>
+          <h3>Fréjus A.</h3>
+        </div>
+        <div class="p-6 md:max-w-lg max-w-xs mb-3 md:w-1/2">
+          <p class="text-center text-5xl text-purple">❝</p>
+          <p class="text-lg mb-2 lora">"Merci pour la formation, je ne pouvais pas rêver mieux.
+            <br>
+            <br> Je réfléchissais depuis à où trouver une formation en programmation à moindre coût
+            <br>
+            <br> [...] C'est bien expliqué, intéressant et je découvre de nouvelles notions."</p>
+          <h3>Ariel A.</h3>
+        </div>
+      </div>
+      <div class="p-8 mt-2">
+        <h2 class="text-center text-3xl">Commences dès aujourd'hui !</h2>
+      </div>
+      <div class="">
+        <p class="text-center text-5xl">10.000
+          <sup>F</sup><span class="text-2xl">/mois</span>
+        </p>
+        <p class="text-center text-lg mt-3 mb-2 text-grey-darker">Le première semaine est offerte !</p>
+        <br>
+        <div class="mt-4 text-center">
+          <a class="shadow-md py-3 px-6 bg-black text-white no-underline font-bold rounded text-xl" href="/admission-closed.html">Inscris-toi !</a>
+        </div>
+      </div>
+    </div>
+    <br>
+    <div class="flex mt-8 container-sm mx-auto mb-8">
+      <div class="hidden bg-indigo rounded-full h-10 w-10 pt-2 text-center mx-2">
+        <a href="https://fb.me/LeQubeCo" class="text-white text-xl">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+      </div>
+      <div class="bg-blue rounded-full h-10 w-10 pt-2 text-center mx-2">
+        <a href="fb.me/LeQubeCo" class="text-white text-xl">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </div>
+      <div class="hidden bg-green rounded-full h-10 w-10 pt-2 text-center mx-2">
+        <a href="fhttps://chat.whatsapp.com/5570RdsUw70D6xZQZdhZsT" class="text-white text-xl">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </div>
+      <div class="bg-grey rounded-full h-10 w-10 pt-2 text-center mx-2">
+        <a href="mailto:contact@leqube.co" class="text-white text-xl">
+          <i class="fas fa-at"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</body>
+<script>
+  $(function () {
+    $("#menu").on("click", function () {
+      $("#dropdown").toggleClass("hidden")
+    })
+  })
+</script>
+
+</html>

@@ -1,0 +1,15 @@
+@font-face {
+  font-family: Circular;
+  src: url(/public/font/circular/circular-book.otf);
+}
+@font-face {
+  font-family: Circular;
+  font-weight: bold;
+  src: url(/public/font/circular/circular-bold.otf);
+}
+.lora {
+  font-family: Lora, serif !important;
+}
+body {
+    font-family: "Circular", sans-serif;
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>LeQube - Admission</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/public/stylesheets/style.css">
+    <script src="/public/zepto.js"></script>
+</head>
+<body>
+  <div class="flex flex-col justify-between pt-4 md:py-6">
+    <div class="pb-4" style="padding-left: 5%; padding-right: 5%;">
+      <div class="flex justify-between items-center">
+        <div class="flex items-center">
+          <img class="h-6 md:h-8 w-auto mr-2" src="/public/qube_cube.png" alt="Logo Cube">
+          <p class="text-2xl md:text-3xl font-bold">LeQube</p>
+        </div>
+        <div id="menu">
+          <div class="md:hidden border border-grey rounded flex items-center justify-center" style="height: 28px; width: 36px; padding-bottom: 2px;">
+            <p class="text-2xl">···</p>
+          </div>
+          <div id="dropdown" class="absolute bg-white pin-r z-50 hidden" style="max-width: 160px; top:48px; right: 5%;">
+            <div class="shadow p-4 flex flex-col">
+              <a class="text-black text-lg font-bold py-2" href="/event.html">Nos Évènements</a>
+              <a class="text-black text-lg font-bold py-2" href="/programme.html">Le Programme</a>
+            </div>
+          </div>
+        </div>
+        <div class="hidden md:flex">
+          <a class="text-black text-lg font-bold mr-4" href="/event.html">Nos Évènements</a>
+          <a class="text-black text-lg font-bold" href="/programme.html">Le Programme</a>
+        </div>
+      </div>
+    </div>
+    <div class="flex flex-col justify-center w-5/6 md:w-2/5 m-auto text-justify">
+      <h1 class="mb-3 text-lg md:text-xl lg:text-2xl">
+        <i class="fas fa-info-circle"></i> Information</h1>
+      <p class="text-base md:text-lg lg:text-xl my-3">
+        Les inscriptions sont clôturées pour le moment mais tu peux participer à notre <a href="/challenge.html">challenge</a>.
+      </p>
+    </div>
+    <div class="hidden justify-center w-screen">
+      <div class="w-5/6 md:w-2/5">
+        <form action="" method="POST" class="flex flex-row m-auto">
+          <input placeholder="brucewayne@gotham.city" type="text" class="appearance-none border-2 border-grey-dark hover:border-black rounded p-2 flex-auto mr-1">
+          <button type="submit" class="bg-grey-dark hover:bg-black text-white font-bold py-2 px-4 flex-shrink md:flex-grow rounded">
+            <i class="fas fa-lg fa-spinner fa-pulse"></i>
+            <i class="fas fa-lg fa-check"></i>
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <script>
+      $(function () {
+        $("#menu").on("click", function () {
+          $("#dropdown").toggleClass("hidden")
+        })
+      })
+    </script>
+</body>
+</html>
